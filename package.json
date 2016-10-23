@@ -1,0 +1,25 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server/index.js --exec babel-node",
+    "prestart": "babel src/server --out-dir dist",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "body-parser": "^1.15.2",
+    "mongoose": "^4.6.4",
+    "nodemon": "^1.11.0"
+  },
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
